@@ -10,40 +10,88 @@ st.title("🤖 Applied Machine Learning Portfolio")
 
 st.markdown(
     """
-    A collection of practical machine learning projects focused on model development,
-    evaluation, business-aware decision making, and interactive deployment.
-
-    This portfolio currently includes supervised learning projects built with
-    Python, scikit-learn, and Streamlit.
+    A structured portfolio of practical machine learning projects focused on
+    model development, evaluation, business-aware decision making, and interactive deployment.
     """
 )
+
+st.divider()
 
 st.subheader("Project Categories")
 
-st.markdown(
-    """
-    ### Supervised Machine Learning
+cat_col1, cat_col2, cat_col3 = st.columns(3)
 
-    Projects in this section focus on classification and regression problems,
-    including preprocessing pipelines, model evaluation, threshold tuning,
-    and business interpretation.
-    """
-)
+with cat_col1:
+    st.markdown(
+        """
+        ### 🎯 Supervised Learning
+        Classification and regression projects with preprocessing pipelines,
+        model evaluation, and business interpretation.
+        """
+    )
+
+with cat_col2:
+    st.markdown(
+        """
+        ### 📊 Model Evaluation
+        Threshold tuning, ROC analysis, confusion matrices, error analysis,
+        and metric selection.
+        """
+    )
+
+with cat_col3:
+    st.markdown(
+        """
+        ### 🚀 Deployment
+        Interactive Streamlit applications designed for portfolio presentation
+        and practical decision support.
+        """
+    )
+
+st.divider()
 
 st.subheader("Available Projects")
 
-st.markdown(
-    """
-    #### 🏦 Project 1 — Loan Approval Classification
+project_col1, project_col2 = st.columns([1, 1])
 
-    A supervised classification project for predicting loan approval decisions.
+with project_col1:
+    st.markdown(
+        """
+        ### 🏦 Project 1 — Loan Approval Classification
 
-    Key topics:
-    - preprocessing pipeline
-    - logistic regression
-    - ROC AUC analysis
-    - business-cost threshold tuning
-    - dynamic confusion matrix
-    - interactive prediction form
-    """
+        **Type:** Binary Classification  
+        **Model:** Logistic Regression  
+        **Frameworks:** scikit-learn, pandas, Streamlit  
+
+        This project predicts loan approval decisions and explores the trade-off
+        between false approvals and false rejections using business-cost based
+        threshold tuning.
+        """
+    )
+
+    st.page_link(
+        "pages/01_Loan_Approval.py",
+        label="Open Loan Approval Project",
+        icon="🏦",
+    )
+
+with project_col2:
+    st.markdown(
+        """
+        ### 🧩 Next Projects
+
+        Planned additions:
+
+        - Customer churn prediction
+        - House price regression
+        - Medical risk classification
+        - Text classification
+        - Model comparison dashboard
+        """
+    )
+
+st.divider()
+
+st.caption(
+    "Portfolio repository: ImanSoratiAshtiani-Edu/portfolio"
 )
