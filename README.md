@@ -2,6 +2,35 @@
 
 This repository contains my practical portfolio projects in data analysis, machine learning, databases, Streamlit apps, and related AI engineering topics.
 
+## Live Portfolio App
+
+Streamlit app:
+
+https://iman-ml-portfolio.streamlit.app/
+
+## Structure
+
+`	ext
+portfolio/
+├── ML/
+│   └── supervised/
+│       └── p1_loan_approval/
+
+Thought for 5s
+
+حالا README.md اصلی repo را با لینک live app آپدیت کن:
+
+@"
+# Iman Portfolio
+
+This repository contains my practical portfolio projects in data analysis, machine learning, databases, Streamlit apps, and related AI engineering topics.
+
+## Live Portfolio App
+
+Streamlit app:
+
+https://iman-ml-portfolio.streamlit.app/
+
 ## Structure
 
 `	ext
@@ -13,6 +42,10 @@ Current Projects
 ML / Supervised / Project 1 - Loan Approval Classification
 
 A Streamlit-based supervised machine learning project for predicting loan approval decisions.
+
+Project path:
+
+ML/supervised/p1_loan_approval/
 
 Main features:
 
@@ -27,4 +60,4 @@ Dynamic confusion matrix
 Interactive prediction form
 Goal
 
-The goal of this repository is to collect portfolio-ready projects that demonstrate practical machine learning, data analysis, and deployment skills.
+The goal of this repository is to collect portfolio-ready projects that demonstrate practical machine learning, data analysis, deployment, and AI engineering skills.

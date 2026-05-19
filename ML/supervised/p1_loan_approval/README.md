@@ -1,5 +1,9 @@
 # Loan Approval Classification - Supervised ML Portfolio
 
+## Live App
+
+https://iman-ml-portfolio.streamlit.app/
+
 ## Project Overview
 
 This project predicts whether a loan application is likely to be approved using a supervised machine learning pipeline.
@@ -52,12 +56,14 @@ False Negative:
 
 The app allows users to select different business strategies and observe how the recommended approval threshold changes.
 
-## Streamlit App
+## Run Locally
 
-Run locally:
+From this project folder:
 
 `ash
 python -m streamlit run app.py
-Project Status
 
-First working Streamlit version completed.
+Or from the repository root:
+python -m streamlit run ML/supervised/p1_loan_approval/app.py
+
+First deployed Streamlit version completed.
