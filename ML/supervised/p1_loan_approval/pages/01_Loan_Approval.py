@@ -23,6 +23,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import OneHotEncoder, StandardScaler
 
+from pathlib import Path
 
 st.set_page_config(
     page_title="Loan Approval Classification",
@@ -31,7 +32,8 @@ st.set_page_config(
 )
 
 
-DATA_PATH = "data/raw/loan.csv"
+BASE_DIR = Path(__file__).resolve().parent.parent
+DATA_PATH = BASE_DIR / "data" / "raw" / "loan.csv"
 
 TARGET_COL = "Loan_Status"
 DROP_COLS = ["Loan_ID"]
