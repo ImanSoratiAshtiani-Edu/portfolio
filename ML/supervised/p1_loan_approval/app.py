@@ -1,19 +1,49 @@
-﻿import streamlit as st
+import streamlit as st
 
 st.set_page_config(
-    page_title="Supervised ML Portfolio - Project 1",
-    page_icon="🏦",
+    page_title="Applied Machine Learning Portfolio",
+    page_icon="🤖",
     layout="wide",
 )
 
-st.title("🏦 Supervised ML Portfolio - Project 1")
-st.subheader("Loan Approval Classification")
+st.title("🤖 Applied Machine Learning Portfolio")
 
 st.markdown(
     """
-    This portfolio project demonstrates a supervised machine learning workflow
-    for predicting loan approval decisions.
+    A collection of practical machine learning projects focused on model development,
+    evaluation, business-aware decision making, and interactive deployment.
 
-    Use the sidebar to open the Loan Approval page.
+    This portfolio currently includes supervised learning projects built with
+    Python, scikit-learn, and Streamlit.
+    """
+)
+
+st.subheader("Project Categories")
+
+st.markdown(
+    """
+    ### Supervised Machine Learning
+
+    Projects in this section focus on classification and regression problems,
+    including preprocessing pipelines, model evaluation, threshold tuning,
+    and business interpretation.
+    """
+)
+
+st.subheader("Available Projects")
+
+st.markdown(
+    """
+    #### 🏦 Project 1 — Loan Approval Classification
+
+    A supervised classification project for predicting loan approval decisions.
+
+    Key topics:
+    - preprocessing pipeline
+    - logistic regression
+    - ROC AUC analysis
+    - business-cost threshold tuning
+    - dynamic confusion matrix
+    - interactive prediction form
     """
 )
